@@ -2,16 +2,12 @@
 
 // imports...
 import TecgurusBotonMain from './components/tecgurusBoton/index';
+import TecgurusImagenMain from './components/tecgurusImagen/index';
 import imageLogoReact from './assets/logo512.png';
-
-// constantes
-// <empty>
-
 
 function alerta (name ) {
   alert('Invocado desde: ' + name);
 }
-
 
 function App ( ) {
   // estados...
@@ -29,7 +25,7 @@ function App ( ) {
       // <TecgurusBotonMain labelButton="Este es un boton💥" handler={ alerta }/>
     }
 
-    
+    <TecgurusImagenMain pathImagen={ imageLogoReact }/>
 
     </>
   );
