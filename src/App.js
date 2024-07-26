@@ -1,11 +1,17 @@
 // src/App.js
 
 // imports...
-import TecgurusBoton from './components/tecgurusBoton/index';
+import TecgurusBotonMain from './components/tecgurusBoton/index';
 import imageLogoReact from './assets/logo512.png';
 
 // constantes
 // <empty>
+
+
+function alerta (name ) {
+  alert('Invocado desde: ' + name);
+}
+
 
 function App ( ) {
   // estados...
@@ -19,9 +25,11 @@ function App ( ) {
       // los atributos clasico de las etiquetas HTML...
       // Definen valores iniciales del componente
     }
-    <TecgurusBoton labelButton="Este es un boton💥" />
+    {
+      // <TecgurusBotonMain labelButton="Este es un boton💥" handler={ alerta }/>
+    }
 
-    <div><img src={ imageLogoReact } /></div>
+    
 
     </>
   );
