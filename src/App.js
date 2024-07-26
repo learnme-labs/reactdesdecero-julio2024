@@ -14,18 +14,18 @@ function App ( ) {
   return (
     <>
       <div> <h1>Definiendo  primer componente en REACT</h1></div>
-    {
-      // PROPS
-      // Variables que se envian al componente al momento 
-      // del proceso de instanciado en memoria mediante 
-      // los atributos clasico de las etiquetas HTML...
-      // Definen valores iniciales del componente
-    }
-    {
-      // <TecgurusBotonMain labelButton="Este es un boton💥" handler={ alerta }/>
-    }
+      {
+        // PROPS
+        // Variables que se envian al componente al momento 
+        // del proceso de instanciado en memoria mediante 
+        // los atributos clasico de las etiquetas HTML...
+        // Definen valores iniciales del componente
+      }
+      {
+        // <TecgurusBotonMain labelButton="Este es un boton💥" handler={ alerta }/>
+      }
 
-    <TecgurusImagenMain pathImagen={ imageLogoReact }/>
+      <TecgurusImagenMain pathImagen={ imageLogoReact }/>
 
     </>
   );
