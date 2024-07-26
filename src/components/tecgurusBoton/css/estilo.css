@@ -1,0 +1,13 @@
+button {
+  background-color: #726387;
+  width: 200px;
+  height: 50px;
+  padding: 3px;
+  color: aliceblue;
+}
+
+.div-box {
+  background-color: #924759;
+  width: 100%;
+  height: 95vH;
+}
