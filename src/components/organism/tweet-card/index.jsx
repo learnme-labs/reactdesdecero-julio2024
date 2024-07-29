@@ -13,11 +13,12 @@ const TweetCard = function () {
       </div>
 
       <div className="tweet-col-b">
-        <p> contendio del tweet </p>
+        <div>title</div>
+        <div>contenido</div>
+        <div>botones</div>
       </div>
-      
+
     </div>
   )
 }
-
 export default TweetCard;
