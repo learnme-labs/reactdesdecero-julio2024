@@ -1,0 +1,18 @@
+.tweet-card {
+  width: 500px;
+  height: 250px;
+  border: 1px solid grey;
+  position: relative;
+}
+.tweet-col-a {
+  position: absolute;
+  padding: 5px;
+  width: 30%;
+  border: 1px solid red;
+}
+.tweet-col-b {
+  position: absolute;
+  padding: 5px;
+  width: 70%;
+  border: 1px solid red;
+}
