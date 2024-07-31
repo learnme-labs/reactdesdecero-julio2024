@@ -9,8 +9,10 @@ const Avatar = function ({ profile, opts }) {
   return (
     <div className="avatar">
       <AtomImage pathImage={ profile.image } />
-
-      { ( opts.nickname && <AtomLabel text={ profile.nickname } opts={ { link:profile.home } } /> ) }
+      { 
+        // renderizado condicional...
+        ( opts.nickname && <AtomLabel text={ profile.nickname } opts={ { link:profile.home } } /> )
+      }
     </div>
   );
 

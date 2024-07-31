@@ -17,6 +17,7 @@ const AtomLabel = function ({ text, opts }) {
 
 
   // renderizado condicional...
+  //  * condicional fuera del proceso de renderizado
   let label = null;
   if ( options.link ) {
     label = ( 

@@ -17,7 +17,7 @@ router.get('/:user', function(req, res, next) {
         lastname: "Marquez"
       },
       createAt: "01-01-2024",
-      content: "Hola mundo !! Este es mi primer tweet :)"
+      content: "Hola mundo !! Este es mi primer tweet 😎"
     },
     {
       _id: "669ffb3cb0319f4861a92fa4",
@@ -27,7 +27,7 @@ router.get('/:user', function(req, res, next) {
         lastname: "Marquez"
       },
       createAt: "01-01-2024",
-      content: "Hola mundo !! Este es mi primer tweet :)"
+      content: "Hola mundo !! Este es mi segundo tweet 😱"
     }
   ];
 

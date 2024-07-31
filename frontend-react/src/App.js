@@ -1,13 +1,12 @@
 // src/App.js
 
-import AtomImage from "./components/atom/atom-image";
-import AtomLabel from "./components/atom/atom-label";
-import Avatar from './components/molecule/avatar'
-import TweetCard from "./components/organism/tweet-card";
-import Dashboard from "./components/template/dashboard";
+// import AtomImage from "./components/atom/atom-image";
+// import AtomLabel from "./components/atom/atom-label";
+// import Avatar from './components/molecule/avatar'
+// import TweetCard from "./components/organism/tweet-card";
+// import Dashboard from "./components/template/dashboard";
 import Home from "./components/page/home"
 
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
         // <TweetCard />
         // <TweetCard />
         // <Dashboard />
+        
       }
       <Home />
     </>

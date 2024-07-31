@@ -5,14 +5,23 @@ import Loading from "./../../atom/atom-loading";
 import TweetCard from "./../../organism/tweet-card";
 
 
-const Dashboard = function({ data }) {
-  let content = data.content.map((item, index)=> { 
+const Dashboard = function({ data, loading }) {
+
+  // renderizado condicional:
+  //  salida alternativa para permitirle al DOM-virtual 
+  //  construir nodos de manera exitosa...
+  let content = null;
+  if ( loading ) { 
+    content = ( 
+      <Loading /> 
+    );
+  } else {
+    content = data.content.map((item, index)=> { 
       return (
-          <div className="box-content-component" key={ index }>
-            <TweetCard />
-          </div>
+          <div className="box-content-component" key={ index }> <TweetCard /> </div>
       )
     });
+  }
 
   return (
     <div>
