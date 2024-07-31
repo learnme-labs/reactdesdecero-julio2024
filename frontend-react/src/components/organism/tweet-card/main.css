@@ -1,0 +1,39 @@
+/* organism/tweet-card */
+
+.tweet-card {
+  width: 99%;
+  min-height: 200px;
+  border: 2px solid #ede9e8;
+  display: flex;
+  position: relative;
+}
+.tweet-col-a {
+  float: left;
+  width: 25%;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tweet-col-b {
+  float: left;
+  width: 75%;
+  margin:3px;
+}
+
+.tweet-section-title {
+  width: 100%;
+  height: 25px;
+}
+
+.tweet-section-content {
+  width: 100%;
+  height: 70%;
+}
+
+.tweet-section-share {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+}
+

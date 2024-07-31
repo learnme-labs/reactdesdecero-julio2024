@@ -1,0 +1,9 @@
+.atomImage {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.atomImage-dark {
+  background-color: #4d4d4d;
+  border-radius: 50%;
+}

@@ -1,0 +1,15 @@
+/* atom/atom-label */
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: #757575;
+  text-decoration: none;
+}
+
+.text-label {
+  color: #757575;
+  font-size: 16px;
+}

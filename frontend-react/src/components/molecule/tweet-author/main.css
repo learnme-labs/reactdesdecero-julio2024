@@ -1,0 +1,11 @@
+/*  */
+
+.tweet-autor {
+  padding: 3px;
+  display: flex;
+}
+
+.autor-col {
+  float: left;
+  width: 30%;
+}
