@@ -16,8 +16,8 @@ const TweetCard = function({ tweet, opts }) {
         <Avatar 
           profile={ 
             { 
-              image: "https://img.buzzfeed.com/buzzfeed-static/complex/images/ic7defqune831dh9orwm/memoji-2.png",
-              nickname: "@oskrmarolv",
+              image: tweet.imageProfile,
+              nickname: tweet.username,
               home: "https://google.com.mx"
             }
           }
@@ -34,14 +34,14 @@ const TweetCard = function({ tweet, opts }) {
           <TweetAuthor 
             author={ 
               { 
-                nickname: "@oskrmarolv", 
-                username: "Oscar Marq"
+                nickname: tweet.username, 
+                username: `${tweet.account.firstname} ${tweet.account.lastname}`
               } 
             } 
           />
         </div>
         <div className="tweet-section-content">
-          <TweetContentText text="Welcome to the React documentation! This page will give you an introduction to the 80% of React concepts that you will use on a daily basis..." />
+          <TweetContentText text={ tweet.content } />
         </div>
         <div className="tweet-section-share">
           <TweetButtonShare />

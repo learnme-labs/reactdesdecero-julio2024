@@ -17,6 +17,7 @@ router.get('/:user', function(req, res, next) {
         lastname: "Marquez"
       },
       createAt: "01-01-2024",
+      imageProfile: "https://img.buzzfeed.com/buzzfeed-static/complex/images/ic7defqune831dh9orwm/memoji-2.png",
       content: "Hola mundo !! Este es mi primer tweet 😎"
     },
     {
@@ -27,11 +28,12 @@ router.get('/:user', function(req, res, next) {
         lastname: "Marquez"
       },
       createAt: "01-01-2024",
+      imageProfile: "https://img.buzzfeed.com/buzzfeed-static/complex/images/ic7defqune831dh9orwm/memoji-2.png",
       content: "Hola mundo !! Este es mi segundo tweet 😱"
     }
   ];
 
-  return res.json(tweets);
+  setTimeout(() => { return res.json(tweets) }, 4857);
 });
 
 module.exports = router;

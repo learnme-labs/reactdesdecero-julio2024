@@ -23,35 +23,35 @@ const Home = function( ) {
   //                                          dependencia cambie su estado
 
   React.useEffect(() => {
-    setTimeout(() => {
-      let data = {
-        header:  null,
-        content: [ "tweet_001", "tweet_002", "tweet_003", "tweet_004" ],
-        news: null
-      };
-      setDataUser(data);
-      setLoading(false);
-    }, 5000);
+    // setTimeout(() => {
+    //   let data = {
+    //     header:  null,
+    //     content: [ "tweet_001", "tweet_002", "tweet_003", "tweet_004" ],
+    //     news: null
+    //   };
+    //   setDataUser(data);
+    //   setLoading(false);
+    // }, 5000);
 
     // PROMISE...
     // const p = new Promise ((resolve, reject) => {});
     // p.finally(() => {})
     //   .then(data => {})
     //   .catch(err => {});
-    // fetch("http://localhost:3001/tweets/oskrmarolv")
-    //   .finally(() => { console.log("Ya terminó el proceso")})
-    //   .then((response) => {
-    //     console.log(response.status);
-    //     console.log(response.body);
+    fetch("http://localhost:3001/tweets/oskrmarolv")
+      .finally((  ) => { })
+      .then((response) => { return response.json() })
+      .then((data) => {
+        let dataToDashboard = {
+          header:  null,
+          content: data,
+          news: null
+        };
+        setDataUser(dataToDashboard);
 
-    //     return response.json();
-    //   })
-    //   .then((data) => {
-    //     console.log(data);
-
-    //     setLoading(false);
-    //   })
-    //   .catch(err => { console.error(err) });
+        setLoading(false);
+      })
+      .catch(err => { console.error(err) });
   }, [ loading ]);
 
   return ( <Dashboard loading= { loading } data={ dataUser } /> );

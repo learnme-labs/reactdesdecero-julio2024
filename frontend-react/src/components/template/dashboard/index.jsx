@@ -18,7 +18,7 @@ const Dashboard = function({ data, loading }) {
   } else {
     content = data.content.map((item, index)=> { 
       return (
-          <div className="box-content-component" key={ index }> <TweetCard /> </div>
+          <div className="box-content-component" key={ item._id }> <TweetCard tweet={ item } /> </div>
       )
     });
   }
