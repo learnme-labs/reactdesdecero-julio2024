@@ -1,6 +1,6 @@
 //
 
-import './main.css'
+import './main.css';
 
 const PageHome = function () {
   return (
