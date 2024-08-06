@@ -15,7 +15,7 @@ class ComponenteDeClase extends Component {
     };
   }
 
-  // Ciclo de Vida del componente
+  // CICLO DE VIDA DEL COMPONENTE
 
   // invicado cuando el componente se rederiza 
   // por primera vez en la estructura del 
@@ -29,6 +29,17 @@ class ComponenteDeClase extends Component {
   // los estados del componente (this.state)...
   componentDidUpdate(prevProps, prevState) {
     console.log("actualizacion del componente... SUCCESS!!", prevProps, prevState);
+  }
+
+  // permite determinar si el componente 
+  // entrara a un nuevo proceso de
+  // actualizacion. Retorna 'true' si el
+  // componente va a ser actualizado, 
+  // en caso contrario se retorna 'false'...
+  shouldComponentUpdate(nextProp, nextState) {
+    console.log(this.state, nextState);
+
+    return true;
   }
 
   // invocado cuando el componente es
