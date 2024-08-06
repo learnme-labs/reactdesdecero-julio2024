@@ -39,10 +39,10 @@ const PageLogin = function() {
         let data = response.json();
 
         console.log("data-response:", data);
+
         //
         // PENDIENTE POR COMPLETAR
         //
-
         
       }
     } catch (err) {

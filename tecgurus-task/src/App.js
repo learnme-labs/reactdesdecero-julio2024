@@ -1,7 +1,7 @@
 // src/App.js
 
 import React from 'react';
-import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink  } from 'react-router-dom';
 
 import PageHome from './components/page/home';
 import PageLogin from './components/page/auth';
@@ -51,12 +51,11 @@ function App() {
           <Routes>
             <Route path="/" element={ <PageHome />}></Route>
             <Route path="/login" element={ <PageLogin />}></Route>
+              {
+                // <Route path="/dashboard/*" element={ <PageDash />}></Route>
+              }
             <Route path="*" element={ <PageError />}></Route>
           </Routes>
-
-
-
-
         </div>
       </BrowserRouter>
     </>
