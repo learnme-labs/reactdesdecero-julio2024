@@ -10,9 +10,6 @@ class ComponenteDeClase extends Component {
     // invivacion del metodo constructor
     // de la clase superior "React.Component"
     super(props);
-    this.state = {
-      contador: 0
-    };
   }
 
   // CICLO DE VIDA DEL COMPONENTE
@@ -52,14 +49,16 @@ class ComponenteDeClase extends Component {
 
   // Metodo de instancia
   clickHandler(e) {
-    this.setState({ contador: this.state.contador+1 });
+    
   }
 
   render() {
+    const { contador, setContador } = this.props;
+
     return (
       <div>
-        <h3>Numero de click's realizados hasta ahora: { this.state.contador }</h3>
-        <button onClick={ (e) => { this.clickHandler(e) } }>Clickeame !!</button>
+        <h3>Numero de click's realizados hasta ahora: { contador }</h3>
+        <button onClick={ (e) => { setContador(contador+1) } }>Clickeame !!</button>
       </div>
     );
   }
