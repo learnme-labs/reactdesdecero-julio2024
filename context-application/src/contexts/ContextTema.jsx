@@ -1,5 +1,7 @@
 // src/contexts/ContextTema/index.jsx
-import { createContext, useContext } from "react";
+import { useState } from "react";
+import { createContext } from "react";
+
 
 // Creando componente de contexto 
 // (espacio de memoria compartida)
@@ -11,9 +13,24 @@ const ContextoTema = createContext();
 // definir el alcance que tendra
 // el contexto...
 const ManejadorContextoTema = function ({ children }) {
+  let [ tema, setTema ] = useState("dark");
+
   return (
-    <ContextoTema.Provider>
+    <ContextoTema.Provider value={ { tema, setTema } }>
       { children }
-    </ContextoTema.Provider>
+    </ContextoTema.Provider >
   );
 }
+
+
+
+
+const TokenSesion = createContext();
+
+const ManejadorTokenSesion = function({ children }){ }
+
+
+export { 
+  ContextoTema, ManejadorContextoTema, 
+  TokenSesion, ManejadorTokenSesion
+};
