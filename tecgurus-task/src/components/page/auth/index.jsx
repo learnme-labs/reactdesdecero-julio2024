@@ -1,6 +1,8 @@
 // 
 import { useState } from 'react';
 
+import CentralViewTemplate from '../../template/central-view';
+
 import './main.css';
 
 
@@ -62,7 +64,7 @@ const PageLogin = function() {
     setUsername(event.target.value);
   }
 
-  return (
+  let formLogin = (
     <div>
       <form onSubmit={ (e) => { submitHandler(e) } }>
         <input 
@@ -80,6 +82,12 @@ const PageLogin = function() {
         <button type="submit">Iniciar sesion</button>
       </form>
     </div>
+  );
+
+  return (
+    <CentralViewTemplate>
+      { formLogin }
+    </CentralViewTemplate>
   );
 }
 

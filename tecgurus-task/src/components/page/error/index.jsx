@@ -1,10 +1,18 @@
 // 
 
+import CentralViewTemplate from '../../template/central-view';
+
 import './main.css';
 
 const PageError = function() {
   return (
-    <div><h1>Página no encontrada!!</h1></div>
+    <CentralViewTemplate>
+      <div>
+        <h1>Error 404</h1>
+        <p>Página no encontrada</p>
+      </div>
+    </CentralViewTemplate>
+    
   );
 }
 

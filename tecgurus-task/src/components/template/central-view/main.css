@@ -1,0 +1,12 @@
+.view-central-box {
+  width: 100%;
+  height: 90vh;
+  margin: 10px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.view-central-col-a {
+  width: 100%;
+  margin: 10px;
+}
